@@ -44,6 +44,7 @@ navigation becomes more and more difficult. Playable by up to four people.
 %{_datadir}/glib-2.0/schemas/org.gnome.nibbles.gschema.xml
 %{_datadir}/%{name}
 %{_iconsdir}/*/*/apps/%{name}.*
+%{_iconsdir}/*/*/apps/%{name}-symbolic.*
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/appdata/%{name}.appdata.xml
 
