@@ -1,8 +1,8 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-nibbles
-Version:	3.14.1
-Release:	%mkrel 3
+Version:	3.16.1
+Release:	1
 Summary:	GNOME Nibbles game
 License:	GPLv2+ and GFDL
 Group:		Games/Arcade
@@ -29,13 +29,13 @@ navigation becomes more and more difficult. Playable by up to four people.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
 %makeinstall_std
 
-%find_lang %{name} --with-gnome --with-help
+%find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
 %license COPYING

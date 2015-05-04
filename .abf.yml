@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   gnome-nibbles-3.14.1.tar.xz: 0f4c1f580eb2381ebd186b76342a9fb0a0d44a39
+sources:
+  gnome-nibbles-3.16.1.tar.xz: 87779b8c7b30e002ee631fe89590e0393e0e3090
