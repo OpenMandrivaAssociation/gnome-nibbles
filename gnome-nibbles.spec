@@ -3,7 +3,7 @@
 
 Name:		gnome-nibbles
 Version:	3.18.2
-Release:	1
+Release:	2
 Summary:	GNOME Nibbles game
 License:	GPLv2+ and GFDL
 Group:		Games/Arcade
