@@ -43,7 +43,7 @@ navigation becomes more and more difficult. Playable by up to four people.
 %files -f %{name}.lang
 %doc COPYING
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
+%{_datadir}/applications/org.gnome.Nibbles.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.nibbles.gschema.xml
 %{_datadir}/%{name}
 %{_iconsdir}/*/*/apps/%{name}.*
