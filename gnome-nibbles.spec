@@ -2,7 +2,7 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-nibbles
-Version:	3.32.0
+Version:	3.34.2
 Release:	1
 Summary:	GNOME Nibbles game
 License:	GPLv2+ and GFDL
@@ -19,6 +19,7 @@ BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 BuildRequires:	pkgconfig(gee-0.8)
 BuildRequires:	pkgconfig(libgnome-games-support-1)
+BuildRequires:  meson
 Obsoletes:	gnibbles
 # For help
 Requires:	yelp
@@ -32,11 +33,11 @@ navigation becomes more and more difficult. Playable by up to four people.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --with-gnome
 
