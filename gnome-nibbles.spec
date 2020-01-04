@@ -2,7 +2,7 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-nibbles
-Version:	3.32.0
+Version:	3.34.2
 Release:	1
 Summary:	GNOME Nibbles game
 License:	GPLv2+ and GFDL
@@ -14,11 +14,14 @@ BuildRequires:	pkgconfig(clutter-gtk-1.0) >= 1.0.0
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
+BuildRequires:  pkgconfig(gsound)
+BuildRequires:	pkgconfig(gee-0.8)
+BuildRequires:	pkgconfig(libgnome-games-support-1)
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
-BuildRequires:	pkgconfig(gee-0.8)
-BuildRequires:	pkgconfig(libgnome-games-support-1)
+BuildRequires:  meson
+BuildRequires:  vala
 Obsoletes:	gnibbles
 # For help
 Requires:	yelp
@@ -32,11 +35,11 @@ navigation becomes more and more difficult. Playable by up to four people.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --with-gnome
 
@@ -46,8 +49,8 @@ navigation becomes more and more difficult. Playable by up to four people.
 %{_datadir}/applications/org.gnome.Nibbles.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.nibbles.gschema.xml
 %{_datadir}/%{name}
-%{_iconsdir}/*/*/apps/%{name}.*
-%{_iconsdir}/*/*/apps/%{name}-symbolic.*
+%{_iconsdir}/*/*/apps/org.gnome.Nibbles.*
+%{_iconsdir}/*/*/apps/org.gnome.Nibbles-symbolic.*
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/metainfo/org.gnome.Nibbles.appdata.xml
 
