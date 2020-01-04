@@ -20,6 +20,7 @@ BuildRequires:	libxml2-utils
 BuildRequires:	pkgconfig(gee-0.8)
 BuildRequires:	pkgconfig(libgnome-games-support-1)
 BuildRequires:  meson
+BuildRequires:  vala
 Obsoletes:	gnibbles
 # For help
 Requires:	yelp
