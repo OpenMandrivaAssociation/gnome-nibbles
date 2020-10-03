@@ -47,7 +47,7 @@ navigation becomes more and more difficult. Playable by up to four people.
 %doc COPYING
 %{_bindir}/%{name}
 %{_datadir}/applications/org.gnome.Nibbles.desktop
-%{_datadir}/glib-2.0/schemas/org.gnome.nibbles.gschema.xml
+#{_datadir}/glib-2.0/schemas/org.gnome.nibbles.gschema.xml
 %{_datadir}/%{name}
 %{_iconsdir}/*/*/apps/org.gnome.Nibbles.*
 %{_iconsdir}/*/*/apps/org.gnome.Nibbles-symbolic.*
