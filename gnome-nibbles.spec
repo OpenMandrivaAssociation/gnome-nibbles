@@ -2,7 +2,7 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-nibbles
-Version:	3.38.0
+Version:	3.38.1
 Release:	1
 Summary:	GNOME Nibbles game
 License:	GPLv2+ and GFDL
