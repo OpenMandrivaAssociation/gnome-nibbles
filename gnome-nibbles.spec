@@ -9,6 +9,8 @@ License:	GPLv2+ and GFDL
 Group:		Games/Arcade
 URL:		https://wiki.gnome.org/Nibbles
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Patch0:		0001-Reference-of-GtkChild-fields-is-handled-by-GtkBuilde.patch
+Patch1:		0001-Don-t-alter-or-try-to-write-GtkChild-fields.patch
 BuildRequires:	pkgconfig(clutter-1.0) >= 1.0.0
 BuildRequires:	pkgconfig(clutter-gtk-1.0) >= 1.0.0
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
@@ -32,7 +34,7 @@ avoiding the walls and yourself. With each diamond your worm grows longer and
 navigation becomes more and more difficult. Playable by up to four people.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %meson
