@@ -1,6 +1,8 @@
 %define _disable_rebuild_configure 1
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
+%global optflags %{optflags} -Wno-incompatible-function-pointer-types
+
 Name:		gnome-nibbles
 Version:	3.38.2
 Release:	5
