@@ -11,7 +11,6 @@ License:	GPLv2+ and GFDL
 Group:		Games/Arcade
 URL:		https://wiki.gnome.org/Nibbles
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-Patch1:		0001-Don-t-alter-or-try-to-write-GtkChild-fields.patch
 BuildRequires:	pkgconfig(clutter-1.0) >= 1.0.0
 BuildRequires:	pkgconfig(clutter-gtk-1.0) >= 1.0.0
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
