@@ -4,8 +4,8 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:		gnome-nibbles
-Version:	3.38.3
-Release:	2
+Version:	4.0.1
+Release:	1
 Summary:	GNOME Nibbles game
 License:	GPLv2+ and GFDL
 Group:		Games/Arcade
@@ -13,12 +13,12 @@ URL:		https://wiki.gnome.org/Nibbles
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(clutter-1.0) >= 1.0.0
 BuildRequires:	pkgconfig(clutter-gtk-1.0) >= 1.0.0
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
+BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  pkgconfig(gsound)
 BuildRequires:	pkgconfig(gee-0.8)
-BuildRequires:	pkgconfig(libgnome-games-support-1)
+BuildRequires:	pkgconfig(libgnome-games-support-2)
 BuildRequires:  gtk-update-icon-cache
 BuildRequires:	intltool
 BuildRequires:	itstool
