@@ -18,7 +18,7 @@ BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  pkgconfig(gsound)
 BuildRequires:	pkgconfig(gee-0.8)
-BuildRequires:	pkgconfig(libgnome-games-support-1)
+BuildRequires:	pkgconfig(libgnome-games-support-2)
 BuildRequires:  gtk-update-icon-cache
 BuildRequires:	intltool
 BuildRequires:	itstool
