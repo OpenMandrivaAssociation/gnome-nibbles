@@ -4,7 +4,7 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:		gnome-nibbles
-Version:	4.0.1
+Version:	4.0.2
 Release:	1
 Summary:	GNOME Nibbles game
 License:	GPLv2+ and GFDL
