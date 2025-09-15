@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:  pkgconfig(gsound)
 BuildRequires:	pkgconfig(gee-0.8)
 BuildRequires:	pkgconfig(libgnome-games-support-2)
+BuildRequires:  desktop-file-utils
 BuildRequires:  gtk-update-icon-cache
 BuildRequires:	intltool
 BuildRequires:	itstool
