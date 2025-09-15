@@ -59,3 +59,4 @@ navigation becomes more and more difficult. Playable by up to four people.
 %{_iconsdir}/*/*/apps/org.gnome.Nibbles-symbolic.*
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/metainfo/org.gnome.Nibbles.metainfo.xml
+%{_datadir}/locale/*/LC_MESSAGES/gnome-nibbles_libgnome-games-support.mo
