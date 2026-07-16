@@ -5,7 +5,7 @@
 
 Name:		gnome-nibbles
 Version:	4.5.2
-Release:	2
+Release:	3
 Summary:	GNOME Nibbles game
 License:	GPLv2+ and GFDL
 Group:		Games/Arcade
