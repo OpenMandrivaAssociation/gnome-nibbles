@@ -4,8 +4,8 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:		gnome-nibbles
-Version:	4.5.2
-Release:	3
+Version:	4.6.2
+Release:	1
 Summary:	GNOME Nibbles game
 License:	GPLv2+ and GFDL
 Group:		Games/Arcade
@@ -14,6 +14,10 @@ Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version
 BuildRequires:	pkgconfig(clutter-1.0) >= 1.0.0
 BuildRequires:	pkgconfig(clutter-gtk-1.0) >= 1.0.0
 BuildRequires:	pkgconfig(gtk4)
+BuildRequires:  pkgconfig(gio-2.0)
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(glibmm-2.68)
+BuildRequires:  pkgconfig(gtkmm-4.0)
 BuildRequires:  pkgconfig(libadwaita-1)
 BuildRequires:	pkgconfig(libcanberra-gtk3) >= 0.26
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
@@ -49,7 +53,7 @@ navigation becomes more and more difficult. Playable by up to four people.
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc COPYING
+%license gpl-3.0.txt
 %{_bindir}/%{name}
 %{_datadir}/applications/org.gnome.Nibbles.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.Nibbles.gschema.xml
